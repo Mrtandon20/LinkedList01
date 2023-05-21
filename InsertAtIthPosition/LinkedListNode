@@ -4,6 +4,9 @@ public class LinkedListNode {
 
     public static Node<Integer> Insert(Node<Integer> head, int pos, int data){
         Node<Integer> newNode = new Node<Integer>(data);
+        if(head == null){
+        return head;
+        }
         if(pos == 0){
             newNode.next = head;
             head = newNode;
